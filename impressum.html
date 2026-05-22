@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum — Shifti</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { 'brand-dark': '#050505', 'brand-card': '#0f0f0f', 'brand-border': '#1f1f1f', 'brand-terracotta': '#c56b52', 'brand-rose': '#b48a9f' } } } }
+    </script>
+</head>
+<body class="bg-brand-dark text-slate-300 font-sans min-h-screen flex flex-col justify-between">
+    <main class="max-w-3xl mx-auto px-6 py-16 w-full">
+        <a href="index.html" class="inline-flex items-center gap-2 text-sm text-brand-terracotta hover:underline mb-8 font-semibold">
+            &larr; Zurück zur Startseite
+        </a>
+        <div class="bg-brand-card border border-brand-border p-8 rounded-3xl shadow-xl">
+            <h1 class="text-3xl font-black text-white mb-6 tracking-tight">Impressum</h1>
+            <p class="text-slate-400 mb-4"><strong>Angaben gemäß § 5 DDG</strong></p>
+            <div class="grid md:grid-cols-2 gap-6 my-6 border-t border-b border-brand-border py-6">
+                <div>
+                    <h2 class="text-white font-bold mb-2">Verantwortlich</h2>
+                    <p class="text-slate-400 leading-relaxed">Luca Schneider<br>Alpenstraße 27<br>86825 Bad Wörishofen<br>Deutschland</p>
+                </div>
+                <div>
+                    <h2 class="text-white font-bold mb-2">Kontakt</h2>
+                    <p class="text-slate-400 leading-relaxed">E-Mail: <a href="mailto:info.shifti@gmx.de" class="text-brand-rose hover:underline">info.shifti@gmx.de</a><br>Telefon: +49 170 1915156</p>
+                </div>
+            </div>
+            <h2 class="text-lg font-bold text-white mt-6 mb-2">Steuerliche Angaben</h2>
+            <p class="text-slate-400 mb-4 leading-relaxed">Gemäß § 19 UStG wird keine Umsatzsteuer berechnet (Kleinunternehmerregelung).</p>
+            <h2 class="text-lg font-bold text-white mt-6 mb-2">Verbraucherstreitbeilegung</h2>
+            <p class="text-slate-400 leading-relaxed">Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr" target="_blank" class="text-brand-rose hover:underline">https://ec.europa.eu/consumers/odr</a>.</p>
+        </div>
+    </main>
+    <footer class="text-center py-6 border-t border-brand-border text-xs text-slate-600">
+        &copy; 2026 Shifti. Alle Rechte vorbehalten.
+    </footer>
+</body>
+</html>
