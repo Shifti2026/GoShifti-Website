@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shifti — Die unschlagbare Premium-Lösung für Schichtarbeiter</title>
+    <title>Shifti — Dein smarter Schichtbegleiter</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
         tailwind.config = {
             theme: {
@@ -14,533 +13,182 @@
                         brand: {
                             rose: '#925a75',
                             terracotta: '#c56b52',
-                            sage: '#5d7559',
                             light: '#fcfbfa',
                             card: '#ffffff',
-                            border: '#e5e7eb',
-                            accent: '#e27d60'
+                            border: '#e5e7eb'
                         }
                     }
                 }
             }
         }
     </script>
-    <style>
-        html { scroll-behavior: smooth; }
-        .feature-card { transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
-        .feature-card:hover { transform: translateY(-4px); border-color: #c56b52; box-shadow: 0 20px 40px -15px rgba(197,107,82,0.15); }
-        .glow-orange { box-shadow: 0 10px 30px rgba(197,107,82,0.08); }
-        .glow-pulse { animation: pulseGlow 2s infinite alternate; }
-        @keyframes pulseGlow { 0% { box-shadow: 0 0 10px rgba(197,107,82,0.1); } 100% { box-shadow: 0 0 20px rgba(197,107,82,0.3); } }
-    </style>
 </head>
-<body id="mainBody" class="bg-brand-light text-slate-700 font-sans antialiased transition-colors duration-500">
+<body class="bg-brand-light text-slate-700 font-sans min-h-screen flex flex-col justify-between antialiased">
 
-    <nav class="sticky top-0 z-50 backdrop-blur-md bg-brand-light/90 border-b border-brand-border">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex items-center space-x-3">
-                <img src="Logo Shifti.jpg" alt="Shifti Logo" class="w-10 h-10 rounded-xl object-cover border border-brand-border">
-                <span class="text-2xl font-black tracking-tight text-slate-900">Shifti <span class="text-xs uppercase bg-brand-terracotta px-2 py-0.5 rounded text-white font-bold ml-1 tracking-widest">Premium</span></span>
-            </div>
-            <div class="hidden lg:flex space-x-6 text-sm font-semibold tracking-wide text-slate-600">
-                <a href="#core-logic" class="hover:text-brand-terracotta transition">Biorhythmus-Logik</a>
-                <a href="#dashboard-features" class="hover:text-brand-terracotta transition">Dashboard</a>
-                <a href="#planer-features" class="hover:text-brand-terracotta transition">Planer</a>
-                <a href="#ernaehrung-features" class="hover:text-brand-terracotta transition">Ernährung</a>
-                <a href="#training-features" class="hover:text-brand-terracotta transition">Training</a>
-                <a href="#supplement-features" class="hover:text-brand-terracotta transition">Supplements</a>
-            </div>
-            <div class="flex items-center space-x-4">
-                <a href="https://shifti.lovable.app" target="_blank" class="bg-gradient-to-r from-brand-terracotta to-brand-rose hover:opacity-90 text-white px-6 py-3 rounded-xl text-sm font-bold transition shadow-lg shadow-brand-terracotta/20 transform hover:scale-105 duration-200">
-                    App gratis öffnen <i class="fa-solid fa-fire ml-1.5"></i>
-                </a>
-            </div>
+    <header class="max-w-6xl mx-auto w-full px-6 py-6 flex justify-between items-center">
+        <div class="text-2xl font-black text-slate-950 tracking-tight flex items-center gap-2">
+            <span class="w-3 h-3 rounded-full bg-brand-terracotta"></span>
+            Shifti
         </div>
-    </nav>
-
-    <header class="relative overflow-hidden py-24 lg:py-36 border-b border-brand-border bg-white">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-            <div class="mb-8 flex justify-center">
-                <div class="relative p-1.5 rounded-3xl bg-gradient-to-tr from-brand-terracotta via-brand-rose to-brand-accent shadow-2xl shadow-brand-terracotta/10">
-                    <img src="Logo Shifti.jpg" alt="Shifti App Logo" class="w-32 h-32 rounded-[20px] object-cover">
-                </div>
-            </div>
-
-            <span class="inline-flex items-center gap-2 py-2 px-4 rounded-full text-xs font-bold bg-brand-terracotta/10 text-brand-terracotta border border-brand-terracotta/20 mb-8 tracking-wide uppercase">
-                <span class="w-2 h-2 rounded-full bg-brand-terracotta animate-ping"></span> Die unschlagbare Premium-All-in-One-Lösung für Schichtarbeit
-            </span>
-            <h1 class="text-4xl sm:text-7xl font-black tracking-tight text-slate-950 mb-8 leading-tight max-w-5xl mx-auto">
-                Schluss mit kaputtem Biorhythmus.<br>Willkommen bei <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-terracotta via-brand-rose to-brand-terracotta">Shifti</span>!
-            </h1>
-            <p class="text-xl sm:text-2xl text-slate-600 max-w-3xl mx-auto mb-12 leading-relaxed">
-                Verknüpfe Schichtplaner, adaptive Fitness und smarte Ernährung über eine revolutionäre, intelligente Circadian-Logik. Keine starren Resets mehr.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 max-w-lg mx-auto">
-                <a href="https://shifti.lovable.app" target="_blank" class="w-full bg-gradient-to-r from-brand-terracotta via-brand-rose to-brand-terracotta text-white text-lg font-black px-8 py-5 rounded-2xl transition shadow-2xl shadow-brand-terracotta/30 flex items-center justify-center gap-3 transform hover:scale-[1.02] duration-200">
-                    Jetzt gratis durchstarten <i class="fa-solid fa-rocket"></i>
-                </a>
-            </div>
-            <p class="text-xs text-slate-500 mt-4 flex items-center justify-center gap-2">
-                <i class="fa-solid fa-shield-halved text-brand-sage"></i> 24 Funktionen komplett kostenlos &bull; In 10 Sekunden startklar
-            </p>
-        </div>
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(197,107,82,0.03)_0,transparent_70%)] pointer-events-none"></div>
+        <nav class="flex items-center gap-6 text-sm font-semibold text-slate-600">
+            <a href="faq.html" class="hover:text-brand-terracotta transition py-2">FAQ</a>
+            <a href="eula.html" class="hover:text-brand-terracotta transition py-2">EULA</a>
+            <a href="datenschutz.html" class="hover:text-brand-terracotta transition py-2">Datenschutz</a>
+            <a href="impressum.html" class="hover:text-brand-terracotta transition py-2">Impressum</a>
+        </nav>
     </header>
 
-    <section id="core-logic" class="py-24 border-b border-brand-border bg-white/50">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-xs font-bold text-brand-rose uppercase tracking-widest mb-3">Die Biorhythmus-Revolution</h2>
-                <h3 class="text-3xl sm:text-5xl font-black text-slate-950 tracking-tight">Deine biological Uhr bestimmt den Tag</h3>
-                <p class="mt-4 text-slate-600 max-w-2xl mx-auto">Normale Apps killen deine Motivation um 00:00 Uhr nachts. Shifti denkt wie du: Ein Tracking-Tag resettet sich erst, wenn dein echter Wach- und Schlafzyklus vorbei ist.</p>
+    <main class="w-full flex-grow">
+        <section class="max-w-4xl mx-auto px-6 py-16 sm:py-24 flex flex-col items-center justify-center text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-2 bg-brand-rose/10 text-brand-rose rounded-full text-xs font-bold tracking-wide uppercase mb-8">
+                ✨ Die All-in-One App für Schichtarbeiter
             </div>
             
-            <div class="grid lg:grid-cols-12 gap-8 items-start">
-                <div class="lg:col-span-5 space-y-6">
-                    <div class="bg-brand-card p-6 rounded-2xl border border-brand-border shadow-sm">
-                        <h4 class="text-lg font-bold text-slate-950 mb-2 flex items-center gap-2">
-                            <i class="fa-solid fa-hourglass-half text-brand-terracotta"></i> Circadianer Tracker-Reset
-                        </h4>
-                        <p class="text-slate-600 text-sm leading-relaxed">
-                            Wenn du in der Nachtschicht um 02:00 Uhr morgens einen snack trackst, gehört dieser zum aktuellen "Wach-Zyklus" (Arbeitstag) und wird nicht als Frühstück für den nächsten Tag verbucht. Der Reset erfolgt erst nach deiner echten Hauptschlafphase.
-                        </p>
-                    </div>
-                    <div class="bg-brand-card p-6 rounded-2xl border border-brand-border shadow-sm">
-                        <h4 class="text-lg font-bold text-slate-950 mb-2 flex items-center gap-2">
-                            <i class="fa-solid fa-route text-brand-sage"></i> Circadianer Jetlag-Rechner
-                        </h4>
-                        <p class="text-slate-600 text-sm leading-relaxed">
-                            Wechselst du von Früh- auf Nachtschicht? Der integrierte Algorithmus berechnet dir einen exakten Übergangs-Fahrplan für strategische Powernaps und Lichtexposition, um deine innere Uhr müdigkeitsfrei umzustellen.
-                        </p>
-                    </div>
-                </div>
+            <h1 class="text-5xl sm:text-7xl font-black text-slate-950 tracking-tight max-w-3xl leading-none mb-6">
+                Bringe Balance in dein <span class="text-brand-terracotta">Schichtleben</span>.
+            </h1>
+            
+            <p class="text-lg sm:text-xl text-slate-500 max-w-2xl mb-10 leading-relaxed">
+                Smarte Schichtplanung, Fitness-Tracking, Ernährungs-Logs und ein intelligenter AI-Coach – alles in einer App, perfekt abgestimmt auf deinen Rhythmus.
+            </p>
 
-                <div class="lg:col-span-7 bg-brand-card border border-brand-border rounded-3xl p-6 sm:p-8 glow-orange relative shadow-sm">
-                    <div class="absolute top-4 right-4 bg-brand-terracotta/10 text-brand-terracotta text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded border border-brand-terracotta/20">
-                        Nachtschicht-Modus Aktiv
-                    </div>
-                    
-                    <h4 class="text-xl font-black text-slate-950 mb-6 flex items-center gap-2">
-                        <i class="fa-solid fa-moon text-brand-rose"></i> Deine adaptive Schaltzentrale
-                    </h4>
+            <div class="flex flex-col sm:flex-row gap-4 w-full justify-center max-w-md mb-24">
+                <a href="#" class="bg-slate-950 hover:bg-slate-900 text-white font-bold py-4 px-8 rounded-2xl shadow-xl transition-all duration-200 transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
+                    Jetzt kostenlos laden
+                </a>
+                <a href="faq.html" class="bg-white border border-brand-border hover:bg-slate-50 text-slate-900 font-bold py-4 px-8 rounded-2xl shadow-sm transition-all duration-200 transform hover:-translate-y-0.5 flex items-center justify-center">
+                    Mehr erfahren (FAQ)
+                </a>
+            </div>
+        </section>
 
-                    <div class="mb-6">
-                        <p class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Aktuelle Mahlzeiten-Kategorien (02:45 Uhr)</p>
-                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                            <div class="bg-brand-light p-3 rounded-xl border border-brand-border text-center">
-                                <span class="block text-xs text-slate-600 font-medium">Pre-Shift Meal</span>
-                                <span class="text-xs text-brand-sage font-bold">640 kcal</span>
-                            </div>
-                            <div class="bg-brand-light p-3 rounded-xl border border-brand-terracotta/40 text-center">
-                                <span class="block text-xs text-slate-950 font-bold">Nachtschicht-Snack</span>
-                                <span class="text-xs text-slate-500">Aktiv &bull; Bereit</span>
-                            </div>
-                            <div class="bg-brand-light p-3 rounded-xl border border-brand-border text-center opacity-40">
-                                <span class="block text-xs text-slate-400">Post-Shift Recovery</span>
-                                <span class="text-xs text-slate-400">Gesperrt</span>
-                            </div>
-                        </div>
-                    </div>
+        <section class="max-w-5xl mx-auto px-6 pb-20">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-black text-slate-950 tracking-tight mb-4">Alles, was du für deinen Alltag brauchst</h2>
+                <p class="text-slate-500 max-w-lg mx-auto text-sm sm:text-base">Shifti vereint vier mächtige Werkzeuge in einer einzigen, intuitiven Oberfläche.</p>
+            </div>
 
-                    <div class="mb-6 bg-brand-light/50 p-4 rounded-xl border border-brand-border">
-                        <p class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2.5"><i class="fa-solid fa-lightning text-brand-terracotta mr-1"></i> Quick-Log: Schnelles Eintragen auf Station / bei der Arbeit</p>
+            <div class="space-y-16">
+                
+                <div class="bg-white border border-brand-border p-8 sm:p-10 rounded-3xl shadow-sm grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                    <div class="md:col-span-2 flex justify-start md:justify-center">
+                        <div class="w-16 h-16 bg-brand-terracotta/10 text-brand-terracotta rounded-2xl flex items-center justify-center text-3xl font-bold">📅</div>
+                    </div>
+                    <div class="md:col-span-10">
+                        <h3 class="text-2xl font-bold text-slate-950 mb-3">Intuitiver Schichtplaner</h3>
+                        <p class="text-slate-600 leading-relaxed mb-4">Trage deine Arbeitszeiten mit wenigen Klicks ein und verwalte wechselnde Schichtsysteme (Früh-, Spät-, Nachtschicht). Die App berechnet deine Freizeitphasen automatisch und warnt dich vor Schlafmangel bei schnellen Wechseln.</p>
                         <div class="flex flex-wrap gap-2">
-                            <button class="bg-white hover:bg-slate-50 border border-brand-border text-xs font-medium text-slate-800 px-3 py-2 rounded-lg transition shadow-sm">🥜 Nüsse (180 kcal)</button>
-                            <button class="bg-white hover:bg-slate-50 border border-brand-border text-xs font-medium text-slate-800 px-3 py-2 rounded-lg transition shadow-sm">🥛 Proteinshake (140 kcal)</button>
-                            <button class="bg-white hover:bg-slate-50 border border-brand-border text-xs font-medium text-slate-800 px-3 py-2 rounded-lg transition shadow-sm">🍌 Banane (95 kcal)</button>
-                        </div>
-                    </div>
-
-                    <div class="border-t border-brand-border pt-4">
-                        <button onclick="triggerSos()" class="w-full bg-red-50 hover:bg-red-100 border border-red-200 text-red-700 font-bold py-3 px-4 rounded-xl transition flex items-center justify-center gap-2 text-sm uppercase tracking-wide glow-pulse">
-                            <i class="fa-solid fa-triangle-exclamation text-red-600"></i> Heißhunger-Notfallknopf (Night-Shift SOS)
-                        </button>
-                        <div id="sosResponse" class="hidden mt-3 p-4 bg-red-50/50 border border-red-100 rounded-xl text-xs text-slate-700">
-                            <span class="text-red-700 font-bold block mb-1">🚨 KI-Cravings-Schutz geladen:</span>
-                            Dein Körper verlangt Energie wegen des veränderten Cortisolspiegels. Trinke jetzt 300ml Ingwerwasser gegen Cravings. Mach diese 2-Minuten-Übung: Blicke für 30 Sekunden in eine helle Lichtquelle und führe 10 schnelle Kniebeugen aus, um dein Gehirn zu reaktivieren! Als Snack eignen sich jetzt ideal 30g Mandeln.
+                            <span class="px-3 py-1 bg-brand-light border border-brand-border rounded-full text-xs font-semibold text-slate-500">Schnelleingabe</span>
+                            <span class="px-3 py-1 bg-brand-light border border-brand-border rounded-full text-xs font-semibold text-slate-500">Rhythmus-Analyse</span>
+                            <span class="px-3 py-1 bg-brand-light border border-brand-border rounded-full text-xs font-semibold text-slate-500">Kalender-Export</span>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="dashboard-features" class="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="border-l-4 border-brand-terracotta pl-4 mb-12">
-            <h2 class="text-3xl font-black tracking-tight text-slate-950 uppercase">1. Cockpit &amp; Finanzen</h2>
-            <p class="text-slate-500 text-sm">Behalte den Überblick über deinen Körper, deine Zeit und dein Geld.</p>
-        </div>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="bg-brand-card border border-brand-border p-6 rounded-2xl feature-card shadow-sm">
-                <div class="text-brand-terracotta text-2xl mb-4"><i class="fa-solid fa-house"></i></div>
-                <h3 class="text-lg font-bold text-slate-950 mb-2">Schicht-Hero &amp; Tagesmetriken</h3>
-                <p class="text-slate-600 text-sm mb-4">Deine Schicht-Karte zeigt dir live den exakten Countdown zur nächsten Schicht, kombiniert mit 3 vitalen Tagesmetriken und smarten Quick-Action Buttons.</p>
-                <span class="text-[10px] font-bold bg-slate-100 text-slate-700 px-2 py-0.5 rounded border border-brand-border uppercase">Kostenlos</span>
-            </div>
-            <div class="bg-brand-card border border-brand-border p-6 rounded-2xl feature-card shadow-sm">
-                <div class="text-brand-rose text-2xl mb-4"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
-                <h3 class="text-lg font-bold text-slate-950 mb-2">Tägliche KI-Motivation</h3>
-                <p class="text-slate-600 text-sm mb-4">Maßgeschneiderte mentale Motivations-Kicks, exakt abgestimmt auf deinen Erschöpfungsgrad und Schifttyp, damit du auch vor der Nachtschicht voll fokussiert bleibst.</p>
-                <span class="text-[10px] font-bold bg-brand-rose/10 text-brand-rose px-2 py-0.5 rounded border border-brand-rose/20 uppercase">3×/Woche Free &bull; Pro Unbegrenzt</span>
-            </div>
-            <div class="bg-brand-card border border-brand-border p-6 rounded-2xl feature-card shadow-sm">
-                <div class="text-brand-sage text-2xl mb-4"><i class="fa-solid fa-fire-flame-curved"></i></div>
-                <h3 class="text-lg font-bold text-slate-950 mb-2">Streak-Tracking &amp; Meilensteine</h3>
-                <p class="text-slate-600 text-sm mb-4">Verliere nie deine Gewohnheiten aus den Augen. Tracke deine erfolgreichen Tage in Folge und feiere erreichte Meilensteine trotz unregelmäßiger Arbeitszeiten.</p>
-                <span class="text-[10px] font-bold bg-slate-100 text-slate-700 px-2 py-0.5 rounded border border-brand-border uppercase">Kostenlos</span>
-            </div>
-    </section>
+                <div class="bg-white border border-brand-border p-8 sm:p-10 rounded-3xl shadow-sm grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                    <div class="md:col-span-2 flex justify-start md:justify-center">
+                        <div class="w-16 h-16 bg-brand-rose/10 text-brand-rose rounded-2xl flex items-center justify-center text-3xl font-bold">💪</div>
+                    </div>
+                    <div class="md:col-span-10">
+                        <h3 class="text-2xl font-bold text-slate-950 mb-3">Dynamisches Fitness-Tracking</h3>
+                        <p class="text-slate-600 leading-relaxed mb-4">Trainieren, wenn es in dein Leben passt. Dokumentiere deine Workouts und erhalte Vorschläge für Trainingseinheiten, die sich nach deinem aktuellen Energielevel und deiner letzten Schicht richten.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-brand-light border border-brand-border rounded-full text-xs font-semibold text-slate-500">Workout-Log</span>
+                            <span class="px-3 py-1 bg-brand-light border border-brand-border rounded-full text-xs font-semibold text-slate-500">Energie-Level-Abgleich</span>
+                            <span class="px-3 py-1 bg-brand-light border border-brand-border rounded-full text-xs font-semibold text-slate-500">Fortschritts-Statistiken</span>
+                        </div>
+                    </div>
+                </div>
 
-    <section id="planer-features" class="py-20 bg-white border-t border-b border-brand-border">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="border-l-4 border-brand-rose pl-4 mb-12">
-                <h2 class="text-3xl font-black tracking-tight text-slate-950 uppercase">2. High-Speed Schichtplaner</h2>
-                <p class="text-slate-500 text-sm">Plane deine Zukunft und koordiniere dich mühelos mit deiner Familie.</p>
-            </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-brand-card border border-brand-border p-6 rounded-2xl feature-card shadow-sm">
-                    <div class="text-brand-terracotta text-2xl mb-4"><i class="fa-solid fa-calendar-check"></i></div>
-                    <h3 class="text-lg font-bold text-slate-950 mb-2">5 Schichttypen + Bereitschaft</h3>
-                    <p class="text-slate-600 text-sm mb-4">Trage Früh, Zwischen, Spät, Nacht und Frei blitzschnell ein. Inklusive vollwertiger Erfassung von Rufbereitschaften und flexibler Anpassung.</p>
-                    <span class="text-[10px] font-bold bg-slate-100 text-slate-700 px-2 py-0.5 rounded border border-brand-border uppercase">Kostenlos</span>
+                <div class="bg-white border border-brand-border p-8 sm:p-10 rounded-3xl shadow-sm grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                    <div class="md:col-span-2 flex justify-start md:justify-center">
+                        <div class="w-16 h-16 bg-emerald-500/10 text-emerald-600 rounded-2xl flex items-center justify-center text-3xl font-bold">🥗</div>
+                    </div>
+                    <div class="md:col-span-10">
+                        <h3 class="text-2xl font-bold text-slate-950 mb-3">Ernährungs-Logs &amp; Supplement-Tracker</h3>
+                        <p class="text-slate-600 leading-relaxed mb-4">Gegen den Heißhunger in der Nachtschicht. Protokolliere deine Mahlzeiten und behalte wichtige Nahrungsergänzungsmittel im Blick. Shifti erinnert dich passend zu deinem veränderten Tagesrhythmus an die Einnahme.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-brand-light border border-brand-border rounded-full text-xs font-semibold text-slate-500">Nährwert-Tagebuch</span>
+                            <span class="px-3 py-1 bg-brand-light border border-brand-border rounded-full text-xs font-semibold text-slate-500">Supplement-Wecker</span>
+                            <span class="px-3 py-1 bg-brand-light border border-brand-border rounded-full text-xs font-semibold text-slate-500">Mahlzeiten-Timing</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-brand-card border border-brand-border p-6 rounded-2xl feature-card shadow-sm">
-                    <div class="text-brand-rose text-2xl mb-4"><i class="fa-solid fa-infinity"></i></div>
-                    <h3 class="text-lg font-bold text-slate-950 mb-2">Unbegrenzte Zukunftsplanung</h3>
-                    <p class="text-slate-600 text-sm mb-4">Plane deine Schichten unbegrenzt im Voraus, um Urlaube und Freizeit optimal abzugleichen. In der Free-Version kannst du bis zu 3 Monate vorausplanen.</p>
-                    <span class="text-[10px] font-bold bg-brand-rose/10 text-brand-rose px-2 py-0.5 rounded border border-brand-rose/20 uppercase">3 Monate Free &bull; Pro unbegrenzt</span>
-                </div>
-                <div class="bg-brand-card border border-brand-border p-6 rounded-2xl feature-card shadow-sm">
-                    <div class="text-brand-sage text-2xl mb-4"><i class="fa-solid fa-calendar-days"></i></div>
-                    <h3 class="text-lg font-bold text-slate-950 mb-2">KW-Anzeige &amp; Monatsnavigation</h3>
-                    <p class="text-slate-600 text-sm mb-4">Behalte dank standardisierter ISO-Kalenderwochen-Anzeige und schnellem Monatspicker immer die volle Orientierung über deine Arbeitszyklen.</p>
-                    <span class="text-[10px] font-bold bg-slate-100 text-slate-700 px-2 py-0.5 rounded border border-brand-border uppercase">Kostenlos</span>
-                </div>
-                <div class="bg-brand-card border border-brand-border p-6 rounded-2xl feature-card shadow-sm">
-                    <div class="text-brand-terracotta text-2xl mb-4"><i class="fa-solid fa-users"></i></div>
-                    <h3 class="text-lg font-bold text-slate-950 mb-2">Echtzeit Gruppen-Kalender</h3>
-                    <p class="text-slate-600 text-sm mb-4">Lade dein Team oder deinen Partner ein. Nutze den automatischen Echtzeit-Sync inklusive individueller Farbkodierung für maximalen Durchblick im Beziehungsalltag.</p>
-                    <span class="text-[10px] font-bold bg-brand-rose/10 text-brand-rose px-2 py-0.5 rounded border border-brand-rose/20 uppercase">Pro Modul</span>
-                </div>
-                <div class="bg-brand-card border-2 border-brand-rose p-6 rounded-2xl feature-card shadow-md">
-                    <div class="text-brand-rose text-2xl mb-4"><i class="fa-solid fa-champagne-glasses"></i></div>
-                    <h3 class="text-lg font-bold text-slate-950 mb-2">Gemeinsame freie Tage</h3>
-                    <p class="text-slate-600 text-sm mb-4">Die App analysiert die Schichtpläne deiner Kontakte vollautomatisch und hebt eure nächsten gemeinsamen freien Tage als echtes Highlight hervor.</p>
-                    <span class="text-[10px] font-bold bg-brand-rose/10 text-brand-rose px-2 py-0.5 rounded border border-brand-rose/20 uppercase">Pro Modul</span>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="ernaehrung-features" class="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="border-l-4 border-brand-sage pl-4 mb-12">
-            <h2 class="text-3xl font-black tracking-tight text-slate-950 uppercase">3. Smarte Ernährung gegen Cravings</h2>
-            <p class="text-slate-500 text-sm">Kein Tracking-Stress mehr mitten in der Nacht. Lass Fotos und Texte für dich arbeiten.</p>
-        </div>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="bg-brand-card border border-brand-border p-6 rounded-2xl feature-card shadow-sm">
-                <div class="text-brand-terracotta text-2xl mb-4"><i class="fa-solid fa-barcode"></i></div>
-                <h3 class="text-lg font-bold text-slate-950 mb-2">Echter Barcode-Scanner</h3>
-                <p class="text-slate-600 text-sm mb-4">Nutze den integrierten Barcode-Scanner powered by Open Food Facts. Scanne Lebensmittel blitzschnell ohne KI-Kontingent, immer zu 100% kostenlos.</p>
-                <span class="text-[10px] font-bold bg-slate-100 text-slate-700 px-2 py-0.5 rounded border border-brand-border uppercase">Kostenlos</span>
-            </div>
-            <div class="bg-brand-card border border-brand-border p-6 rounded-2xl feature-card shadow-sm">
-                <div class="text-brand-rose text-2xl mb-4"><i class="fa-solid fa-keyboard"></i></div>
-                <h3 class="text-lg font-bold text-slate-950 mb-2">KI Text-Analyse</h3>
-                <p class="text-slate-600 text-sm mb-4">Tippe einfach ein: „Zwei Rühreier mit Schinken und einer Scheibe Brot“. Die KI extrahiert die Makronährstoffe vollautomatisch in Sekunden.</p>
-                <span class="text-[10px] font-bold bg-slate-100 text-slate-700 px-2 py-0.5 rounded border border-brand-border uppercase">5× pro Tag Free &bull; Pro Unbegrenzt</span>
-            </div>
-            <div class="bg-brand-card border border-brand-border p-6 rounded-2xl feature-card shadow-sm">
-                <div class="text-brand-sage text-2xl mb-4"><i class="fa-solid fa-camera"></i></div>
-                <h3 class="text-lg font-bold text-slate-950 mb-2">KI Foto-Analyse</h3>
-                <p class="text-slate-600 text-sm mb-4">Fotografiere dein Kantinenessen mitten in der Nachtschicht. Shifti erkennt die Mahlzeit und loggt die Nährwerte ohne langes Tippen ein.</p>
-                <span class="text-[10px] font-bold bg-slate-100 text-slate-700 px-2 py-0.5 rounded border border-brand-border uppercase">3× pro Tag Free &bull; Pro Unbegrenzt</span>
-            </div>
-            <div class="bg-brand-card border border-brand-border p-6 rounded-2xl feature-card shadow-sm">
-                <div class="text-brand-terracotta text-2xl mb-4"><i class="fa-solid fa-droplet"></i></div>
-                <h3 class="text-lg font-bold text-slate-950 mb-2">Wasser-Tracking mit Schicht-Anpassung</h3>
-                <p class="text-slate-600 text-sm mb-4">Trink-Erinnerungen passen sich deiner Schichtlänge an. Ein 12-Stunden-Dienst erfordert mehr Flüssigkeit – Shifti steuert dein Ziel dynamisch mit.</p>
-                <span class="text-[10px] font-bold bg-slate-100 text-slate-700 px-2 py-0.5 rounded border border-brand-border uppercase">Kostenlos</span>
-            </div>
-            <div class="bg-brand-card border border-brand-border p-6 rounded-2xl feature-card shadow-sm">
-                <div class="text-brand-rose text-2xl mb-4"><i class="fa-solid fa-link"></i></div>
-                <h3 class="text-lg font-bold text-slate-950 mb-2">KI Link-zu-Rezept Extraktion</h3>
-                <p class="text-slate-600 text-sm leading-relaxed mb-4">Füge einen beliebigen Rezept-Link aus dem Internet ein. Die KI zieht alle Nährwertdaten heraus und bereitet sie perfekt für dein schnelles Vorkochen (Meal Prep) vor.</p>
-                <span class="text-[10px] font-bold bg-brand-rose/10 text-brand-rose px-2 py-0.5 rounded border border-brand-rose/20 uppercase">5 Rezepte Free &bull; Pro Unbegrenzt</span>
-            </div>
-            <div class="bg-brand-card border border-brand-border p-6 rounded-2xl feature-card shadow-sm">
-                <div class="text-brand-sage text-2xl mb-4"><i class="fa-solid fa-sliders"></i></div>
-                <h3 class="text-lg font-bold text-slate-950 mb-2">Ernährungsformen &amp; Scheduler</h3>
-                <p class="text-slate-600 text-sm mb-4">Wähle aus 5 Ernährungsformen (z.B. Protein-Fasten, High-Carb). Bestimme im Pro-Scheduler, dass du automatisch Mo–Fr Protein-Fasten und Sa–So normal isst.</p>
-                <span class="text-[10px] font-bold bg-brand-rose/10 text-brand-rose px-2 py-0.5 rounded border border-brand-rose/20 uppercase">1 Form Free &bull; Pro alle 5 + Scheduler</span>
-            </div>
-            <div class="bg-brand-card border border-brand-border p-6 rounded-2xl feature-card shadow-sm">
-                <div class="text-brand-terracotta text-2xl mb-4"><i class="fa-solid fa-wand-magic"></i></div>
-                <h3 class="text-lg font-bold text-slate-950 mb-2">KI Live-Ernährungsempfehlung</h3>
-                <p class="text-slate-600 text-sm mb-4">Erhalte basierend auf deinen Makros und deinem Schichtzustand Echtzeit-Tipps: „Jetzt Proteine laden, um das nächtliche Leistungstief um 03:00 Uhr zu umgehen.“</p>
-                <span class="text-[10px] font-bold bg-slate-100 text-slate-700 px-2 py-0.5 rounded border border-brand-border uppercase">1× täglich Free &bull; Pro Live bei jeder Mahlzeit</span>
-            </div>
-            <div class="bg-brand-card border border-brand-border p-6 rounded-2xl feature-card shadow-sm">
-                <div class="text-brand-rose text-2xl mb-4"><i class="fa-solid fa-moon"></i></div>
-                <h3 class="text-lg font-bold text-slate-950 mb-2">KI Biorhythmus-Tagesanalyse</h3>
-                <p class="text-slate-600 text-sm mb-4">Eine umfassende KI-Auswertung am Ende deines echten Wach-Zyklus. Analysiert tiefgehend, wie gut deine Nährstoffzufuhr auf deine tatsächliche Arbeitsbelastung abgestimmt war.</p>
-                <span class="text-[10px] font-bold bg-brand-rose/10 text-brand-rose px-2 py-0.5 rounded border border-brand-rose/20 uppercase">Pro Modul</span>
-            </div>
-            <div class="bg-brand-card border border-brand-border p-6 rounded-2xl feature-card shadow-sm">
-                <div class="text-brand-sage text-2xl mb-4"><i class="fa-solid fa-utensils"></i></div>
-                <h3 class="text-lg font-bold text-slate-950 mb-2">Kochmodus &amp; Share-Cards</h3>
-                <p class="text-slate-600 text-sm mb-4">Lass dich im ablenkungsfreien Kochmodus Schritt für Schritt durch deine Meal-Prep Rezepte leiten und teile deine Erfolge optimiert als stylische Social-Media Share-Card.</p>
-                <span class="text-[10px] font-bold bg-brand-rose/10 text-brand-rose px-2 py-0.5 rounded border border-brand-rose/20 uppercase">Pro Modul</span>
-            </div>
-            <div class="bg-brand-card border border-brand-border p-6 rounded-2xl feature-card shadow-sm">
-                <div class="text-brand-terracotta text-2xl mb-4"><i class="fa-solid fa-image"></i></div>
-                <h3 class="text-lg font-bold text-slate-950 mb-2">KI Bild-Generierung (Fallback)</h3>
-                <p class="text-slate-600 text-sm mb-4">Sollte ein importiertes Rezept kein Vorschaubild besitzen, generiert eine integrierte DALL-E Schnittstelle automatisch ein schönes, motivierendes Hochglanz-Food-Cover.</p>
-                <span class="text-[10px] font-bold bg-brand-rose/10 text-brand-rose px-2 py-0.5 rounded border border-brand-rose/20 uppercase">Pro Modul</span>
-            </div>
-            <div class="bg-brand-card border border-brand-border p-6 rounded-2xl feature-card shadow-sm">
-                <div class="text-brand-rose text-2xl mb-4"><i class="fa-solid fa-star"></i></div>
-                <h3 class="text-lg font-bold text-slate-950 mb-2">Favoriten &amp; Shake-Konfigurator</h3>
-                <p class="text-slate-600 text-sm mb-4">Speichere deine Standard-Mahlzeiten ab und nutze die integrierte Protein-Datenbank, um Shakes perfekt auf deinen Eiweißbedarf nach anstrengenden Schichten abzustimmen.</p>
-                <span class="text-[10px] font-bold bg-slate-100 text-slate-700 px-2 py-0.5 rounded border border-brand-border uppercase">Kostenlos</span>
-            </div>
-            <div class="bg-brand-card border border-brand-border p-6 rounded-2xl feature-card shadow-sm">
-                <div class="text-brand-sage text-2xl mb-4"><i class="fa-solid fa-chart-line"></i></div>
-                <h3 class="text-lg font-bold text-slate-950 mb-2">Ernährungsverlauf &amp; Charts</h3>
-                <p class="text-slate-600 text-sm mb-4">Überblicke deine Kalorien- und Makro-Historie. Die Free-Version sichert dir volle 7 Tage Einblick, während Pro dir eine unbegrenzte Langzeithistorie liefert.</p>
-                <span class="text-[10px] font-bold bg-slate-100 text-slate-700 px-2 py-0.5 rounded border border-brand-border uppercase">7 Tage Free &bull; Pro unbegrenzt</span>
-            </div>
-        </div>
-    </section>
+                <div class="bg-white border border-brand-border p-8 sm:p-10 rounded-3xl shadow-sm grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                    <div class="md:col-span-2 flex justify-start md:justify-center">
+                        <div class="w-16 h-16 bg-amber-500/10 text-amber-600 rounded-2xl flex items-center justify-center text-3xl font-bold">🤖</div>
+                    </div>
+                    <div class="md:col-span-10">
+                        <h3 class="text-2xl font-bold text-slate-950 mb-3">Intelligenter AI-Coach</h3>
+                        <p class="text-slate-600 leading-relaxed mb-4">Dein digitaler Berater für einen gesunden Schlaf und maximale Performance. Der eingebaute Coach wertet deine Schicht- und Gesundheitsdaten aus, gibt dir personalisierte Tipps zur Regeneration und hilft dir, Müdigkeit effektiv zu bekämpfen.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-brand-light border border-brand-border rounded-full text-xs font-semibold text-slate-500">KI-Schlafberatung</span>
+                            <span class="px-3 py-1 bg-brand-light border border-brand-border rounded-full text-xs font-semibold text-slate-500">Regenerations-Tipps</span>
+                            <span class="px-3 py-1 bg-brand-light border border-brand-border rounded-full text-xs font-semibold text-slate-500">Echtzeit-Chat</span>
+                        </div>
+                    </div>
+                </div>
 
-    <section id="training-features" class="py-20 bg-white border-t border-b border-brand-border">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="border-l-4 border-brand-terracotta pl-4 mb-12">
-                <h2 class="text-3xl font-black tracking-tight text-slate-950 uppercase">4. Schicht-adaptives Training</h2>
-                <p class="text-slate-500 text-sm">Progression statt Übermüdung. Sichere deinen Muskelaufbau und Fettverlust systematisch.</p>
             </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-brand-card border border-brand-border p-6 rounded-2xl feature-card shadow-sm">
-                    <div class="text-brand-terracotta text-2xl mb-4"><i class="fa-solid fa-robot"></i></div>
-                    <h3 class="text-lg font-bold text-slate-950 mb-2">KI Trainingsplan &amp; Regeneration</h3>
-                    <p class="text-slate-600 text-sm mb-4">Erhalte einen intelligenten, wöchentlichen Trainingsplan. Free bietet dir 1 aktiven Plan, Pro regeneriert und optimiert deine Pläne jede Woche vollautomatisch neu.</p>
-                    <span class="text-[10px] font-bold bg-slate-100 text-slate-700 px-2 py-0.5 rounded border border-brand-border uppercase">1 Plan Free &bull; Pro unbegrenzt</span>
-                </div>
-                <div class="bg-brand-card border border-brand-border p-6 rounded-2xl feature-card shadow-sm">
-                    <div class="text-brand-rose text-2xl mb-4"><i class="fa-solid fa-mobile-screen-button"></i></div>
-                    <h3 class="text-lg font-bold text-slate-950 mb-2">Live Workout-Execution</h3>
-                    <p class="text-slate-600 text-sm mb-4">Führe dein Training satzweise aus mit integriertem Ruhe-Timer, präzisem Tracking und Live-Coaching-Tipps direkt während des harten Workouts.</p>
-                    <span class="text-[10px] font-bold bg-slate-100 text-slate-700 px-2 py-0.5 rounded border border-brand-border uppercase">Kostenlos</span>
-                </div>
-                <div class="bg-brand-card border border-brand-border p-6 rounded-2xl feature-card shadow-sm">
-                    <div class="text-brand-sage text-2xl mb-4"><i class="fa-solid fa-arrow-trend-up"></i></div>
-                    <h3 class="text-lg font-bold text-slate-950 mb-2">Progressive Überlastung &amp; Gewicht</h3>
-                    <p class="text-slate-600 text-sm mb-4">Integriertes Gewichts-Tracking, das mitdenkt: Basierend auf deinem Echtzeit-Satz-Feedback kalkuliert die App deine nächste Gewichtssteigerung vollkommen selbstständig.</p>
-                    <span class="text-[10px] font-bold bg-slate-100 text-slate-700 px-2 py-0.5 rounded border border-brand-border uppercase">Kostenlos</span>
-                </div>
-                <div class="bg-brand-card border border-brand-border p-6 rounded-2xl feature-card shadow-sm">
-                    <div class="text-brand-terracotta text-2xl mb-4"><i class="fa-solid fa-trophy"></i></div>
-                    <h3 class="text-lg font-bold text-slate-950 mb-2">Persönliche Rekorde (PR)</h3>
-                    <p class="text-slate-600 text-sm mb-4">Das System erkennt PRs im Hintergrund. Feiere deine Kraftzuwächse mit lohnenden In-App Feier-Animationen, die dich dauerhaft am Ball halten.</p>
-                    <span class="text-[10px] font-bold bg-slate-100 text-slate-700 px-2 py-0.5 rounded border border-brand-border uppercase">Kostenlos</span>
-                </div>
-                <div class="bg-brand-card border border-brand-border p-6 rounded-2xl feature-card shadow-sm">
-                    <div class="text-brand-rose text-2xl mb-4"><i class="fa-solid fa-chart-pie"></i></div>
-                    <h3 class="text-lg font-bold text-slate-950 mb-2">Volumen-Charts &amp; History</h3>
-                    <p class="text-slate-600 text-sm mb-4">Behalte das bewegte Gesamtvolumen im Blick. Die Free-Version speichert 30 Tage History, während Pro dir eine unbegrenzte Historie liefert.</p>
-                    <span class="text-[10px] font-bold bg-slate-100 text-slate-700 px-2 py-0.5 rounded border border-brand-border uppercase">30 Tage Free &bull; Pro unbegrenzt</span>
-                </div>
-                <div class="bg-brand-card border-2 border-brand-terracotta p-6 rounded-2xl feature-card shadow-md">
-                    <div class="text-brand-terracotta text-2xl mb-4"><i class="fa-solid fa-dumbbell"></i></div>
-                    <h3 class="text-lg font-bold text-slate-950 mb-2">Schicht-adaptive Plananpassung</h3>
-                    <p class="text-slate-600 text-sm mb-4">Das Herzstück: Erkennt die App eine Nachtschicht oder schlechte Smartwatch-Werte (HRV/Sleep Score), werden Übungen sofort getauscht oder ein sanfter Regenerationstag angesetzt.</p>
-                    <span class="text-[10px] font-bold bg-brand-rose/10 text-brand-rose px-2 py-0.5 rounded border border-brand-rose/20 uppercase">Pro Modul</span>
-                </div>
-                <div class="bg-brand-card border border-brand-border p-6 rounded-2xl feature-card shadow-sm">
-                    <div class="text-brand-sage text-2xl mb-4"><i class="fa-solid fa-comment-medical"></i></div>
-                    <h3 class="text-lg font-bold text-slate-950 mb-2">KI Session-Review</h3>
-                    <p class="text-slate-600 text-sm mb-4">Erhalte nach jedem abgeschlossenen Workout ein personalisiertes, professionelles Coach-Feedback, das deine Leistung auf Basis deiner biologischen Belastbarkeit einordnet.</p>
-                    <span class="text-[10px] font-bold bg-brand-rose/10 text-brand-rose px-2 py-0.5 rounded border border-brand-rose/20 uppercase">Pro Modul</span>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="supplement-features" class="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="border-l-4 border-brand-rose pl-4 mb-12">
-            <h2 class="text-3xl font-black tracking-tight text-slate-950 uppercase">5. Intelligentes Supplement-Tracking</h2>
-            <p class="text-slate-500 text-sm">Gezielte Nährstoffsteuerung exakt relativ zu deinen Wachphasen statt starrer Wecker.</p>
-        </div>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="bg-brand-card border border-brand-border p-6 rounded-2xl feature-card shadow-sm">
-                <div class="text-brand-terracotta text-2xl mb-4"><i class="fa-solid fa-capsules"></i></div>
-                <h3 class="text-lg font-bold text-slate-950 mb-2">Supplement-Tracking (5 vs ♾️)</h3>
-                <p class="text-slate-600 text-sm mb-4">Hake deine tägliche Einnahme ab oder überspringe sie flexibel. In der Free-Version verwaltest du bis zu 5 Supplements parallel, in Pro unbegrenzt.</p>
-                <span class="text-[10px] font-bold bg-slate-100 text-slate-700 px-2 py-0.5 rounded border border-brand-border uppercase">Bis 5 Free &bull; Pro Unbegrenzt</span>
-            </div>
-            <div class="bg-brand-card border border-brand-border p-6 rounded-2xl feature-card shadow-sm">
-                <div class="text-brand-rose text-2xl mb-4"><i class="fa-solid fa-magnifying-glass"></i></div>
-                <h3 class="text-lg font-bold text-slate-950 mb-2">Umfangreiche Marken-Datenbank</h3>
-                <p class="text-slate-600 text-sm mb-4">Nutze das schnelle Autocomplete mit einer validierten Marken-Datenbank (ESN, Naturtreu etc.) und über 35+ fertig hinterlegten Top-Produkten.</p>
-                <span class="text-[10px] font-bold bg-slate-100 text-slate-700 px-2 py-0.5 rounded border border-brand-border uppercase">Kostenlos</span>
-            </div>
-            <div class="bg-brand-card border border-brand-border p-6 rounded-2xl feature-card shadow-sm">
-                <div class="text-brand-sage text-2xl mb-4"><i class="fa-solid fa-box-open"></i></div>
-                <h3 class="text-lg font-bold text-slate-950 mb-2">Vorrats-Tracking &amp; Warnungen</h3>
-                <p class="text-slate-600 text-sm mb-4">Hinterlege deinen Bestand. Die App berechnet den Verbrauch mit und sendet dir eine rechtzeitige Low-Stock Benachrichtigung, bevor Kapseln oder Pulver leer gehen.</p>
-                <span class="text-[10px] font-bold bg-slate-100 text-slate-700 px-2 py-0.5 rounded border border-brand-border uppercase">Kostenlos</span>
-            </div>
-            <div class="bg-brand-card border-2 border-brand-rose p-6 rounded-2xl feature-card shadow-md">
-                <div class="text-brand-rose text-2xl mb-4"><i class="fa-solid fa-bell"></i></div>
-                <h3 class="text-lg font-bold text-slate-950 mb-2">Schicht-relative Push-Erinnerungen</h3>
-                <p class="text-slate-600 text-sm mb-4">Free erinnert fix. Pro verknüpft alles mit deinem Plan: Wachmacher wandern an den Start deines Rhythmus. Schlaf-Supplements (Melatonin, Magnesium) landen exakt 45 Minuten vor dem Schlaf.</p>
-                <span class="text-[10px] font-bold bg-brand-rose/10 text-brand-rose px-2 py-0.5 rounded border border-brand-rose/20 uppercase">Feste Zeiten Free &bull; Schicht-Relativ Pro</span>
-            </div>
-            <div class="bg-brand-card border border-brand-border p-6 rounded-2xl feature-card shadow-sm">
-                <div class="text-brand-terracotta text-2xl mb-4"><i class="fa-solid fa-calendar-check"></i></div>
-                <h3 class="text-lg font-bold text-slate-950 mb-2">Wochen-Konsistenz &amp; Streaks</h3>
-                <p class="text-slate-600 text-sm mb-4">Analysiere deine prozentuale Einnahme-Sicherheit pro Woche und baue dir einen langfristigen Einnahme-Streak pro Supplement auf, um Mängel effektiv auszuschließen.</p>
-                <span class="text-[10px] font-bold bg-brand-rose/10 text-brand-rose px-2 py-0.5 rounded border border-brand-rose/20 uppercase">Pro Modul</span>
-            </div>
-        </div>
-    </section>
-
-    <section id="pricing" class="py-24 border-t border-brand-border bg-white relative">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-20">
-                <h2 class="text-xs font-bold text-brand-terracotta uppercase tracking-widest mb-3">Preise</h2>
-                <h3 class="text-3xl sm:text-5xl font-black text-slate-950 tracking-tight">Faire Optionen für jeden Rhythmus</h3>
-                <p class="mt-4 text-slate-600 max-w-xl mx-auto text-base">Nutze 24 Kernfeatures dauerhaft komplett gratis. Hole dir Pro für die digitale Vollautomatisierung.</p>
+        <section class="max-w-3xl mx-auto px-6 pb-28">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-black text-slate-950 tracking-tight mb-4">Einfache, transparente Preise</h2>
+                <p class="text-slate-500 text-sm sm:text-base">Wähle das Modell, das am besten zu deinem Alltag passt.</p>
             </div>
 
-            <div class="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto items-stretch">
-                <div class="bg-brand-card border border-brand-border rounded-3xl p-8 flex flex-col justify-between shadow-sm">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white border border-brand-border p-8 rounded-3xl shadow-sm flex flex-col justify-between">
                     <div>
-                        <h3 class="text-2xl font-bold text-slate-950">Shifti Free</h3>
-                        <p class="text-slate-500 text-sm mt-1">Dein solides Fundament</p>
-                        <div class="mt-6 flex items-baseline text-slate-950">
-                            <span class="text-5xl font-black tracking-tight">0 €</span>
-                            <span class="ml-2 text-sm text-slate-500">/ dauerhaft gratis</span>
-                        </div>
-                        <ul class="mt-8 space-y-4 text-sm text-slate-600 border-t border-brand-border pt-6">
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-brand-sage"></i> <strong>24 Kernfunktionen</strong> voll inklusive</li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-brand-sage"></i> Unbegrenzter kostenloser Barcode-Scanner</li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-brand-sage"></i> 3 Monate Schicht-Vorausplanung</li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-brand-sage"></i> Manuelle Rezepteingabe &amp; 5 KI-Limits</li>
+                        <h3 class="text-xl font-bold text-slate-950 mb-2">Basis-Version</h3>
+                        <p class="text-slate-400 text-sm mb-6">Perfekt zum Ausprobieren</p>
+                        <div class="text-4xl font-black text-slate-950 mb-6">0,00 € <span class="text-xs font-normal text-slate-400">/ dauerhaft</span></div>
+                        <ul class="space-y-3 text-sm text-slate-600">
+                            <li class="flex items-center gap-2"><span class="text-brand-terracotta">✓</span> Einfache Schichtplanung</li>
+                            <li class="flex items-center gap-2"><span class="text-brand-terracotta">✓</span> Standard Fitness-Log</li>
+                            <li class="flex items-center gap-2"><span class="text-brand-terracotta">✓</span> Basis Ernährungs-Tagebuch</li>
                         </ul>
                     </div>
-                    <a href="https://shifti.lovable.app" target="_blank" class="mt-8 block w-full bg-slate-900 hover:bg-slate-950 text-white text-center font-bold py-4 rounded-xl transition shadow-md">
-                        Kostenlos nutzen
+                    <a href="#" class="mt-8 block text-center bg-brand-light border border-brand-border hover:bg-slate-50 text-slate-900 font-bold py-3 px-6 rounded-xl transition">
+                        Jetzt starten
                     </a>
                 </div>
 
-                <div class="bg-brand-card border border-brand-border rounded-3xl p-8 flex flex-col justify-between relative shadow-sm">
+                <div class="bg-white border-2 border-brand-terracotta p-8 rounded-3xl shadow-md flex flex-col justify-between relative">
+                    <div class="absolute -top-3 right-6 bg-brand-terracotta text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">
+                        Empfohlen
+                    </div>
                     <div>
-                        <h3 class="text-2xl font-bold text-slate-950">Shifti Pro Monat</h3>
-                        <p class="text-brand-rose text-sm font-bold mt-1">Volle Flexibilität</p>
-                        <div class="mt-6 flex items-baseline text-slate-950">
-                            <span class="text-5xl font-black tracking-tight">6,99 €</span>
-                            <span class="ml-2 text-sm text-slate-500">/ Monat</span>
-                        </div>
-                        <p class="text-xs text-brand-rose mt-2 font-medium"><i class="fa-solid fa-rotate"></i> Monatlich kündbar</p>
-                        <ul class="mt-4 space-y-4 text-sm text-slate-600 border-t border-brand-border pt-6">
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-bolt text-brand-terracotta"></i> <strong>11 Premium-Erweiterungen</strong> komplett offen</li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-bolt text-brand-terracotta"></i> Unlimitierte KI Foto- &amp; Textanalysen</li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-bolt text-brand-terracotta"></i> Schicht-relative Supplement-Benachrichtigungen</li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-bolt text-brand-terracotta"></i> Partner-Sync &amp; automatisches Freizeit-Fenster</li>
+                        <h3 class="text-xl font-bold text-slate-950 mb-2">Premium-Mitgliedschaft</h3>
+                        <p class="text-slate-400 text-sm mb-6">Der volle Funktionsumfang</p>
+                        <div class="text-4xl font-black text-slate-950 mb-1">4,99 € <span class="text-xs font-normal text-slate-400">/ Monat</span></div>
+                        <p class="text-xs text-brand-rose font-semibold mb-6">oder 39,99 € / Jahr (Ersparnis über 30 %)</p>
+                        <ul class="space-y-3 text-sm text-slate-600">
+                            <li class="flex items-center gap-2"><span class="text-brand-terracotta">✓</span> Alle Basis-Funktionen unbegrenzt</li>
+                            <li class="flex items-center gap-2"><span class="text-brand-terracotta">✓</span> Vollständiger Zugriff auf den AI-Coach</li>
+                            <li class="flex items-center gap-2"><span class="text-brand-terracotta">✓</span> Intelligenter Supplement-Tracker &amp; Wecker</li>
+                            <li class="flex items-center gap-2"><span class="text-brand-terracotta">✓</span> Erweiterte Schlaf- und Energie-Analysen</li>
                         </ul>
                     </div>
-                    <a href="https://shifti.lovable.app" target="_blank" class="mt-8 block w-full bg-slate-900 hover:bg-slate-950 text-white text-center font-bold py-4 rounded-xl transition shadow-md">
-                        Monatlich testen
-                    </a>
-                </div>
-
-                <div class="bg-brand-card border-2 border-brand-terracotta rounded-3xl p-8 flex flex-col justify-between relative shadow-xl shadow-brand-terracotta/5">
-                    <div class="absolute top-0 right-8 -translate-y-1/2 bg-gradient-to-r from-brand-terracotta to-brand-rose text-white text-xs font-black uppercase tracking-wider px-4 py-1.5 rounded-full shadow-lg">🔥 Bestes Angebot</div>
-                    <div>
-                        <h3 class="text-2xl font-bold text-slate-950">Shifti Pro Jahr</h3>
-                        <p class="text-brand-sage text-sm font-bold mt-1">2 Monate absolut geschenkt!</p>
-                        <div class="mt-6 flex items-baseline text-slate-950">
-                            <span class="text-5xl font-black tracking-tight">69,99 €</span>
-                            <span class="ml-2 text-sm text-slate-500">/ Jahr</span>
-                        </div>
-                        <p class="text-xs text-brand-sage mt-2 font-bold"><i class="fa-solid fa-sparkles"></i> Rechnerisch nur ca. 5,83 € / Monat</p>
-                        <ul class="mt-4 space-y-4 text-sm text-slate-600 border-t border-brand-border pt-6">
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-star text-brand-sage"></i> <strong>Sämtliche Pro-Features</strong> freigeschaltet</li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-star text-brand-sage"></i> Maximaler Preisvorteil aufs Jahr</li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-star text-brand-sage"></i> Lohnrechner + Jetlag-Fahrplan dauerhaft aktiv</li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-star text-brand-sage"></i> Konstante Performance-Updates inklusive</li>
-                        </ul>
-                    </div>
-                    <a href="https://shifti.lovable.app" target="_blank" class="mt-8 block w-full bg-gradient-to-r from-brand-terracotta to-brand-rose text-white text-center text-lg font-black py-4 rounded-xl transition shadow-xl shadow-brand-terracotta/10 transform hover:scale-[1.02]">
-                        Jetzt 2 Monate sparen
+                    <a href="#" class="mt-8 block text-center bg-slate-950 hover:bg-slate-900 text-white font-bold py-3 px-6 rounded-xl shadow-md transition">
+                        Premium freischalten
                     </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <section id="faq" class="py-24 border-t border-brand-border bg-brand-light">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-xs font-bold text-brand-rose uppercase tracking-widest mb-3">FAQ</h2>
-                <h3 class="text-3xl sm:text-5xl font-black text-slate-950 tracking-tight">Häufig gestellte Fragen</h3>
-            </div>
-
-            <div class="space-y-4">
-                <div class="bg-brand-card border border-brand-border p-6 rounded-2xl shadow-sm">
-                    <h3 class="text-base font-bold text-slate-950 mb-2 flex items-center gap-3">
-                        <i class="fa-solid fa-circle-question text-brand-terracotta"></i> Wie funktioniert das schicht-adaptive Training genau?
-                    </h3>
-                    <p class="text-slate-600 text-sm leading-relaxed pl-7">
-                        Sobald du eine Nachtschicht absolvierst oder unregelmäßigen Schlaf trackst, berechnet der integrierte Algorithmus deine Belastungsgrenze neu. Shifti schlägt dir gezielt reduzierte Intensitäten oder strategische Pausen vor, damit du Fett verlierst oder Muskeln aufbaust, ohne auszubrennen.
-                    </p>
-                </div>
-                <div class="bg-brand-card border border-brand-border p-6 rounded-2xl shadow-sm">
-                    <h3 class="text-base font-bold text-slate-950 mb-2 flex items-center gap-3">
-                        <i class="fa-solid fa-circle-question text-brand-terracotta"></i> Brauche ich sofort ein kostenpflichtiges Abonnement?
-                    </h3>
-                    <p class="text-slate-600 text-sm leading-relaxed pl-7">
-                        Nein! Du kannst Shifti dauerhaft kostenlos nutzen. Die 24 Grundfunktionen wie Schichtkalender, manuelles Tracking und der Barcode-Scanner stehen dir komplett kostenfrei zur Verfügung. Nur für unlimitierte KI-Funktionen und den automatischen Sync kannst du optional auf Pro wechseln.
-                    </p>
-                </div>
-                <div class="bg-brand-card border border-brand-border p-6 rounded-2xl shadow-sm">
-                    <h3 class="text-base font-bold text-slate-950 mb-2 flex items-center gap-3">
-                        <i class="fa-solid fa-circle-question text-brand-terracotta"></i> Kann mein Partner meinen Schichtplan einsehen?
-                    </h3>
-                    <p class="text-slate-600 text-sm leading-relaxed pl-7">
-                        Ja, genau dafür ist der Pro Gruppen-Kalender da. Du gibst deinen Kalender einfach per Link frei, und die App gleicht eure Pläne ab. Sie hebt sogar automatisch eure gemeinsamen freien Tage hervor, was die Freizeitplanung radikal vereinfacht.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="border-t border-brand-border bg-white py-16 text-sm">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            
-            <div class="flex flex-wrap justify-center gap-x-8 gap-y-3 mb-8 font-medium text-slate-600">
-                <a href="impressum.html" class="hover:text-brand-terracotta transition">Impressum</a>
-                <a href="agb.html" class="hover:text-brand-terracotta transition">AGB</a>
-                <a href="eula.html" class="hover:text-brand-terracotta transition">EULA</a>
-                <a href="widerruf.html" class="hover:text-brand-terracotta transition">Widerruf</a>
-                <a href="datenschutz.html" class="hover:text-brand-rose transition font-semibold">Datenschutzerklärung</a>
-            </div>
-
-            <div class="text-center text-xs text-slate-400 mt-6">
-                <p>&copy; 2026 Shifti. Alle Rechte vorbehalten.</p>
-            </div>
+    <footer class="max-w-6xl mx-auto w-full px-6 py-8 border-t border-brand-border flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-400 bg-brand-light">
+        <div>&copy; 2026 Shifti. Alle Rechte vorbehalten.</div>
+        <div class="flex gap-6 font-medium">
+            <a href="faq.html" class="hover:text-slate-600 transition">FAQ</a>
+            <a href="eula.html" class="hover:text-slate-600 transition">EULA</a>
+            <a href="datenschutz.html" class="hover:text-slate-600 transition">Datenschutzerklärung</a>
+            <a href="impressum.html" class="hover:text-slate-600 transition">Impressum</a>
         </div>
     </footer>
 
-    <script>
-        // Night-Shift SOS Button Logik
-        function triggerSos() {
-            const box = document.getElementById('sosResponse');
-            box.classList.toggle('hidden');
-        }
-    </script>
-
 </body>
 </html>
-
