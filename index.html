@@ -25,9 +25,10 @@
 </head>
 <body class="bg-brand-light text-slate-700 font-sans min-h-screen flex flex-col justify-between antialiased">
 
+    <!-- Header / Navigation -->
     <header class="max-w-6xl mx-auto w-full px-6 py-6 flex justify-between items-center">
         <div class="text-2xl font-black text-slate-950 tracking-tight flex items-center gap-3">
-            <img src="Logo Shifti.png" alt="Shifti Logo" class="w-8 h-8 rounded-xl object-cover shadow-sm">
+            <img src="Logo%20Shifti.png" alt="Shifti Logo" class="w-8 h-8 rounded-xl object-cover shadow-sm">
             Shifti
         </div>
         <nav class="flex items-center gap-6 text-sm font-semibold text-slate-600">
@@ -38,6 +39,7 @@
         </nav>
     </header>
 
+    <!-- Hero Section -->
     <main class="w-full flex-grow">
         <section class="max-w-4xl mx-auto px-6 py-16 sm:py-24 flex flex-col items-center justify-center text-center">
             <div class="w-24 h-24 bg-white border border-brand-border rounded-3xl shadow-md flex items-center justify-center mb-8 relative overflow-visible p-1">
@@ -70,106 +72,100 @@
             </div>
         </section>
 
+        <!-- Sektion: Features & Logiken -->
         <section id="features" class="max-w-5xl mx-auto px-6 pb-20">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-black text-slate-950 tracking-tight mb-4">Revolutionäre Logik für deinen Alltag</h2>
-                <p class="text-slate-500 max-w-lg mx-auto text-sm sm:text-base">Shifti bricht mit starren App-Mustern und passt sich zu 100 % deiner biologischen Uhr an.</p>
+                <h2 class="text-3xl font-black text-slate-950 tracking-tight mb-4">Die 4 Kern-Reiter von Shifti</h2>
+                <p class="text-slate-500 max-w-lg mx-auto text-sm sm:text-base">Perfekt synchronisiert. Jede Anpassung an Stammdaten, Kalorienzielen oder Arbeitszeiten spiegelt sich sofort im Dashboard wider.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Dashboard -->
                 <div class="bg-white border border-brand-border p-8 rounded-3xl shadow-sm">
-                    <div class="w-12 h-12 bg-brand-terracotta/10 text-brand-terracotta rounded-2xl flex items-center justify-center text-2xl mb-6 font-bold">🌙</div>
-                    <h3 class="text-xl font-bold text-slate-950 mb-2">Circadiane Biorhythmus-Logik</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed mb-4">Kein starrer Mitternachts-Reset um 00:00 Uhr. Dein Tracking-Tag orientiert sich an deinem Schicht- und Wach-Rhythmus. Ein Snack um 02:00 Uhr nachts bleibt Teil deines aktuellen Arbeitstages.</p>
+                    <div class="w-12 h-12 bg-brand-terracotta/10 text-brand-terracotta rounded-2xl flex items-center justify-center text-2xl mb-6 font-bold">🏠</div>
+                    <h3 class="text-xl font-bold text-slate-950 mb-2">Reiter 1: Das Dashboard</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-4">Deine Schaltzentrale mit smarter 3-Tages-Vorschau, direktem Schichtplan-Fortschritt (verbleibende Arbeitszeit / Countdown) und Kalorien- &amp; Schnell-Tracking-Widget für rasche manuelle Einträge.</p>
                     <div class="flex flex-wrap gap-1.5">
-                        <span class="px-2.5 py-0.5 bg-brand-light border border-brand-border rounded-full text-xs text-slate-500">Flexible Slots</span>
-                        <span class="px-2.5 py-0.5 bg-brand-light border border-brand-border rounded-full text-xs text-slate-500">Quick-Log Widget</span>
+                        <span class="px-2.5 py-0.5 bg-brand-light border border-brand-border rounded-full text-xs text-slate-500">3-Tages-Vorschau</span>
+                        <span class="px-2.5 py-0.5 bg-brand-light border border-brand-border rounded-full text-xs text-slate-500">Schnell-Tracking</span>
+                        <span class="px-2.5 py-0.5 bg-brand-light border border-brand-border rounded-full text-xs text-slate-500">Schicht-Countdown</span>
                     </div>
                 </div>
 
+                <!-- Schichtplaner -->
                 <div class="bg-white border border-brand-border p-8 rounded-3xl shadow-sm">
-                    <div class="w-12 h-12 bg-brand-rose/10 text-brand-rose rounded-2xl flex items-center justify-center text-2xl mb-6 font-bold">✈️</div>
-                    <h3 class="text-xl font-bold text-slate-950 mb-2">Circadianer Jetlag-Rechner</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed mb-4">Berechnet den perfekten Übergangs-Fahrplan beim Wechsel von Früh- auf Nachtschicht. Strategische Powernaps und Lichtexposition helfen dir, müdigkeitsfrei umzustellen.</p>
+                    <div class="w-12 h-12 bg-brand-rose/10 text-brand-rose rounded-2xl flex items-center justify-center text-2xl mb-6 font-bold">📅</div>
+                    <h3 class="text-xl font-bold text-slate-950 mb-2">Reiter 2: Der Schichtplaner</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-4">Unbegrenztes manuelles Eintragen und vorausschauendes Planen deines Schichtkalenders für Früh-, Spät- und Nachtschichten. Komplett frei und unlimitiert.</p>
                     <div class="flex flex-wrap gap-1.5">
-                        <span class="px-2.5 py-0.5 bg-brand-light border border-brand-border rounded-full text-xs text-slate-500">Lichtexposition</span>
-                        <span class="px-2.5 py-0.5 bg-brand-light border border-brand-border rounded-full text-xs text-slate-500">Powernaps</span>
+                        <span class="px-2.5 py-0.5 bg-brand-light border border-brand-border rounded-full text-xs text-slate-500">Früh- / Spät- / Nachtschicht</span>
+                        <span class="px-2.5 py-0.5 bg-brand-light border border-brand-border rounded-full text-xs text-slate-500">Unbegrenzter Kalender</span>
                     </div>
                 </div>
 
+                <!-- Ernährung -->
                 <div class="bg-white border border-brand-border p-8 rounded-3xl shadow-sm">
-                    <div class="w-12 h-12 bg-emerald-500/10 text-emerald-600 rounded-2xl flex items-center justify-center text-2xl mb-6 font-bold">💊</div>
-                    <h3 class="text-xl font-bold text-slate-950 mb-2">Intelligentes Supplement-Tracking</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed mb-4">Erinnerungen sind an deinen Schichtplan gekoppelt: Wachmacher (Vitamin D) am Rhythmus-Start, Schlaf-Supplements exakt 45 Minuten vor dem geplanten Schlaffenster.</p>
+                    <div class="w-12 h-12 bg-emerald-500/10 text-emerald-600 rounded-2xl flex items-center justify-center text-2xl mb-6 font-bold">🍽️</div>
+                    <h3 class="text-xl font-bold text-slate-950 mb-2">Reiter 3: Die Ernährung</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-4">Unterteilt in smartes KI-Tracking via Freitextfeld und ein mächtiges Rezeptbuch mit vollautomatischem Instagram-Import, zeitbasierten Filtern und dediziertem High-Protein-Fokus.</p>
                     <div class="flex flex-wrap gap-1.5">
-                        <span class="px-2.5 py-0.5 bg-brand-light border border-brand-border rounded-full text-xs text-slate-500">KI-Mangel-Warnung</span>
-                        <span class="px-2.5 py-0.5 bg-brand-light border border-brand-border rounded-full text-xs text-slate-500">Bioavailability-Tipps</span>
+                        <span class="px-2.5 py-0.5 bg-brand-light border border-brand-border rounded-full text-xs text-slate-500">KI-Freitext-Log</span>
+                        <span class="px-2.5 py-0.5 bg-brand-light border border-brand-border rounded-full text-xs text-slate-500">Instagram-Import</span>
+                        <span class="px-2.5 py-0.5 bg-brand-light border border-brand-border rounded-full text-xs text-slate-500">High Protein</span>
                     </div>
                 </div>
 
+                <!-- Routinen -->
                 <div class="bg-white border border-brand-border p-8 rounded-3xl shadow-sm">
-                    <div class="w-12 h-12 bg-amber-500/10 text-amber-600 rounded-2xl flex items-center justify-center text-2xl mb-6 font-bold">⌚</div>
-                    <h3 class="text-xl font-bold text-slate-950 mb-2">Energie-Check &amp; Smartwatch-Override</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed mb-4">Echtes Tracking deines Energie-Status (Sleep Score/HRV). Wenn du erschöpft bist, überschreibt die KI harte Einheiten automatisch durch Regeneration (Mobility &amp; Dehnen).</p>
+                    <div class="w-12 h-12 bg-amber-500/10 text-amber-600 rounded-2xl flex items-center justify-center text-2xl mb-6 font-bold">💊</div>
+                    <h3 class="text-xl font-bold text-slate-950 mb-2">Reiter 4: Die Routinen</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-4">Vereint hormonelles Wohlbefinden, intelligentes Supplement-Tracking und körperliche Fitness. Enthält eine Verhütungs- und Zyklus-Sektion, schichtabhängige Erinnerungen sowie einen integrierten Self-Workout-Planer mit Übungs-Timer.</p>
                     <div class="flex flex-wrap gap-1.5">
-                        <span class="px-2.5 py-0.5 bg-brand-light border border-brand-border rounded-full text-xs text-slate-500">Auto-Anpassung</span>
-                        <span class="px-2.5 py-0.5 bg-brand-light border border-brand-border rounded-full text-xs text-slate-500">Antientzündlich</span>
-                    </div>
-                </div>
-
-                <div class="bg-white border border-brand-border p-8 rounded-3xl shadow-sm">
-                    <div class="w-12 h-12 bg-slate-900/10 text-slate-900 rounded-2xl flex items-center justify-center text-2xl mb-6 font-bold">🕶️</div>
-                    <h3 class="text-xl font-bold text-slate-950 mb-2">Gesteuerter Deep-Dark-Mode</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed mb-4">Vollautomatisches Umschalten in ein extrem augenschonendes, tiefschwarzes Kontrast-Design während der Spät- oder Nachtschichten, um Blendungen im Dunkeln zu vermeiden.</p>
-                    <div class="flex flex-wrap gap-1.5">
-                        <span class="px-2.5 py-0.5 bg-brand-light border border-brand-border rounded-full text-xs text-slate-500">Automatisch</span>
-                        <span class="px-2.5 py-0.5 bg-brand-light border border-brand-border rounded-full text-xs text-slate-500">Augenschonend</span>
-                    </div>
-                </div>
-
-                <div class="bg-white border border-brand-border p-8 rounded-3xl shadow-sm">
-                    <div class="w-12 h-12 bg-red-500/10 text-red-600 rounded-2xl flex items-center justify-center text-2xl mb-6 font-bold">🚨</div>
-                    <h3 class="text-xl font-bold text-slate-950 mb-2">Heißhunger-Notfallknopf (Night-Shift SOS)</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed mb-4">Ein auffälliger Dashboard-Button liefert dir bei Aktivierung während der Nachtschicht sofort gesunde Snack-Alternativen gegen Cravings oder 2-Minuten-Aktivierungsübungen.</p>
-                    <div class="flex flex-wrap gap-1.5">
-                        <span class="px-2.5 py-0.5 bg-brand-light border border-brand-border rounded-full text-xs text-slate-500">Snack-Alternativen</span>
-                        <span class="px-2.5 py-0.5 bg-brand-light border border-brand-border rounded-full text-xs text-slate-500">Gehirn-Aktivierung</span>
+                        <span class="px-2.5 py-0.5 bg-brand-light border border-brand-border rounded-full text-xs text-slate-500">Zyklus-Tracking</span>
+                        <span class="px-2.5 py-0.5 bg-brand-light border border-brand-border rounded-full text-xs text-slate-500">Smarte Trigger</span>
+                        <span class="px-2.5 py-0.5 bg-brand-light border border-brand-border rounded-full text-xs text-slate-500">Workout-Timer</span>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Sektion: Tarife & Preismodelle -->
         <section id="tarife" class="max-w-5xl mx-auto px-6 pb-28">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-black text-slate-950 tracking-tight mb-4">Wähle dein Modell</h2>
-                <p class="text-slate-500 max-w-lg mx-auto text-sm sm:text-base">Teste alle Pro-Funktionen risikofrei für 14 Tage.</p>
+                <p class="text-slate-500 max-w-lg mx-auto text-sm sm:text-base">Faire Konditionen. Wichtige Stammdaten, Kalorienziele, Arbeitszeiten und Rechtliches lassen sich in beiden Modellen unbegrenzt editieren.</p>
             </div>
 
+            <!-- Tarif-Karten -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-16">
+                <!-- Free Plan -->
                 <div class="bg-white border border-brand-border p-8 rounded-3xl shadow-sm flex flex-col justify-between">
                     <div>
                         <div class="flex justify-between items-start mb-4">
                             <div>
                                 <h3 class="text-2xl font-black text-slate-950">Shifti Free</h3>
-                                <p class="text-slate-400 text-sm mt-1">Für immer kostenlos, kein Ablaufdatum</p>
+                                <p class="text-slate-400 text-sm mt-1">Starke Basis-Funktionen, dauerhaft kostenlos</p>
                             </div>
                         </div>
                         <div class="text-4xl font-black text-slate-950 mb-6">0,00 €</div>
                         
                         <div class="border-t border-brand-border pt-6 mb-6">
-                            <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Zusammenfassung:</div>
+                            <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Inklusive Highlights:</div>
                             <ul class="space-y-3 text-sm text-slate-600">
                                 <li class="flex items-center gap-2.5">
-                                    <span class="text-emerald-500 font-bold">✓</span> <span><strong>24 kostenlose Features</strong> dauerhaft inklusive</span>
+                                    <span class="text-emerald-500 font-bold">✓</span> <span><strong>3-Tages-Vorschau &amp; Fortschritt</strong> vollkommen frei</span>
                                 </li>
                                 <li class="flex items-center gap-2.5">
-                                    <span class="text-amber-500 font-bold">✓</span> <span><strong>10 Features mit Kontingent</strong> / Limits</span>
+                                    <span class="text-emerald-500 font-bold">✓</span> <span><strong>Kalorien- &amp; Schnell-Tracking</strong> unlimitiert</span>
                                 </li>
                                 <li class="flex items-center gap-2.5">
-                                    <span class="text-brand-rose font-bold">✓</span> <span>Smarte Schicht-Karte &amp; Countdown</span>
+                                    <span class="text-emerald-500 font-bold">✓</span> <span><strong>Schichtplaner Kalender</strong> unbegrenzt frei nutzen</span>
                                 </li>
                                 <li class="flex items-center gap-2.5">
-                                    <span class="text-brand-rose font-bold">✓</span> <span>3 Monate Kalender-Vorausplanung</span>
+                                    <span class="text-emerald-500 font-bold">✓</span> <span><strong>Manuelle Rezepteingabe</strong> unbegrenzt kostenlos</span>
+                                </li>
+                                <li class="flex items-center gap-2.5">
+                                    <span class="text-amber-500 font-bold">!</span> <span><strong>Smarte Limits</strong> bei KI-Abfragen und Spezial-Filtern</span>
                                 </li>
                             </ul>
                         </div>
@@ -179,6 +175,7 @@
                     </a>
                 </div>
 
+                <!-- Pro Plan -->
                 <div class="bg-white border-2 border-brand-terracotta p-8 rounded-3xl shadow-md flex flex-col justify-between relative">
                     <div class="absolute -top-3 right-6 bg-brand-terracotta text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">
                         💥 14 Tage kostenlos testen
@@ -187,10 +184,11 @@
                         <div class="flex justify-between items-start mb-4">
                             <div>
                                 <h3 class="text-2xl font-black text-slate-950">Shifti Pro</h3>
-                                <p class="text-slate-400 text-sm mt-1">Unbegrenzte KI, volle History &amp; alle Features</p>
+                                <p class="text-slate-400 text-sm mt-1">Echtzeit-Dynamik, unlimitierte KI und volle Automatisierung</p>
                             </div>
                         </div>
                         
+                        <!-- Preismodelle -->
                         <div class="bg-brand-light p-4 rounded-2xl border border-brand-border mb-6">
                             <div class="flex justify-between items-center pb-2 border-b border-brand-border/60">
                                 <span class="text-sm font-semibold text-slate-600">Monatliches Abo</span>
@@ -199,26 +197,29 @@
                             <div class="flex justify-between items-center pt-2">
                                 <div>
                                     <span class="text-sm font-semibold text-brand-terracotta block">Jährliches Abo</span>
-                                    <span class="text-xs text-emerald-600 font-bold">🎉 Spart 2 Monate (über 28%)!</span>
+                                    <span class="text-xs text-emerald-600 font-bold">🎉 Spare 2 Monate (über 28%)!</span>
                                 </div>
                                 <span class="text-xl font-black text-brand-terracotta">69,99 € <span class="text-xs font-normal text-slate-400">/ Jahr</span></span>
                             </div>
                         </div>
 
                         <div class="border-t border-brand-border pt-4 mb-6">
-                            <div class="text-xs font-bold text-brand-terracotta uppercase tracking-wider mb-4">Alles aus Free plus unbegrenzt:</div>
+                            <div class="text-xs font-bold text-brand-terracotta uppercase tracking-wider mb-4">Grenzenlose Pro-Vorteile:</div>
                             <ul class="space-y-3 text-sm text-slate-600">
                                 <li class="flex items-center gap-2.5">
-                                    <span class="text-brand-terracotta font-bold">✓</span> <span><strong>11 zusätzliche Pro-Only Features</strong></span>
+                                    <span class="text-brand-terracotta font-bold">✓</span> <span><strong>Dynamische KI-Empfehlungen</strong> (Echtzeit)</span>
                                 </li>
                                 <li class="flex items-center gap-2.5">
-                                    <span class="text-brand-terracotta font-bold">✓</span> <span><strong>Unbegrenzte KI-Nutzung</strong> (Mahlzeiten, Analysen)</span>
+                                    <span class="text-brand-terracotta font-bold">✓</span> <span><strong>Unbegrenzte KI-Freitexteingaben</strong> am Tag</span>
                                 </li>
                                 <li class="flex items-center gap-2.5">
-                                    <span class="text-brand-terracotta font-bold">✓</span> <span><strong>Unbegrenzte History</strong> &amp; Zukunftsplanung</span>
+                                    <span class="text-brand-terracotta font-bold">✓</span> <span><strong>Unlimitierter Instagram-Rezept-Import</strong></span>
                                 </li>
                                 <li class="flex items-center gap-2.5">
-                                    <span class="text-brand-terracotta font-bold">✓</span> <span>Echtzeit-Gruppen- &amp; Partnerkalender</span>
+                                    <span class="text-brand-terracotta font-bold">✓</span> <span><strong>Voller Zugriff</strong> auf alle High-Protein-Rezepte</span>
+                                </li>
+                                <li class="flex items-center gap-2.5">
+                                    <span class="text-brand-terracotta font-bold">✓</span> <span><strong>Smarte Routinen</strong> (Zyklus-Automatisierung &amp; Trigger)</span>
                                 </li>
                             </ul>
                         </div>
@@ -229,9 +230,10 @@
                 </div>
             </div>
 
+            <!-- Feature-Matrix Tabelle -->
             <div class="border border-brand-border rounded-3xl bg-white overflow-hidden shadow-sm hidden sm:block">
                 <div class="p-6 bg-brand-light border-b border-brand-border">
-                    <h3 class="font-bold text-slate-950">Vollständige Funktionsübersicht</h3>
+                    <h3 class="font-bold text-slate-950">Detaillierte Funktionsübersicht</h3>
                 </div>
                 <table class="w-full text-left border-collapse text-sm">
                     <thead>
@@ -242,53 +244,41 @@
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-brand-border text-slate-600">
-                        <tr class="bg-slate-50/50 font-bold text-slate-950"><td class="p-3 pl-6" colspan="3">🏠 Dashboard</td></tr>
-                        <tr><td class="p-4 pl-6">Schicht-Karte, Countdown, 3 Metriken, smarte Buttons</td><td class="p-4 text-emerald-600">✓ Inklusive</td><td class="p-4 text-emerald-600">✓ Inklusive</td></tr>
-                        <tr><td class="p-4 pl-6">KI-Motivation &amp; Zitate</td><td class="p-4">3× pro Woche</td><td class="p-4 text-emerald-600">✓ Täglich + 3× manueller Refresh</td></tr>
-                        <tr><td class="p-4 pl-6">Streak-Tracking &amp; Meilensteine</td><td class="p-4 text-emerald-600">✓ Inklusive</td><td class="p-4 text-emerald-600">✓ Inklusive</td></tr>
-                        <tr><td class="p-4 pl-6">🎉 Gemeinsame freie Tage (Team/Partner)</td><td class="p-4 text-slate-400">— Nicht enthalten</td><td class="p-4 text-emerald-600">✓ Premium Feature</td></tr>
+                        <!-- Dashboard -->
+                        <tr class="bg-slate-50/50 font-bold text-slate-950"><td class="p-3 pl-6" colspan="3">🏠 Reiter 1: Das Dashboard</td></tr>
+                        <tr><td class="p-4 pl-6">Empfehlungs-Widget</td><td class="p-4 text-slate-500">Statische, allgemeine Gesundheitstipps</td><td class="p-4 text-emerald-600">✓ Dynamisch, KI-generiert in Echtzeit (nach Schicht &amp; Müdigkeit)</td></tr>
+                        <tr><td class="p-4 pl-6">Dreitages-Vorschau &amp; Schichtplan-Fortschritt</td><td class="p-4 text-emerald-600">✓ Vollständig frei (Nächste 3 Tage &amp; Countdown)</td><td class="p-4 text-emerald-600">✓ Inklusive</td></tr>
+                        <tr><td class="p-4 pl-6">Kalorien- &amp; Schnell-Tracking-Widget</td><td class="p-4 text-emerald-600">✓ Vollständig frei (Täglicher Fortschritt &amp; manueller Eintrag)</td><td class="p-4 text-emerald-600">✓ Inklusive</td></tr>
+                        <tr><td class="p-4 pl-6">Text-Streaks</td><td class="p-4 text-slate-500">Basis-Anzeige der geleisteten Schichten</td><td class="p-4 text-emerald-600">✓ Erweiterte Serien-Tracker (z.B. "Proteinschutz-Serie")</td></tr>
                         
-                        <tr class="bg-slate-50/50 font-bold text-slate-950"><td class="p-3 pl-6" colspan="3">📅 Schichtplaner</td></tr>
-                        <tr><td class="p-4 pl-6">Alle 5 Schichttypen + Rufbereitschaft</td><td class="p-4 text-emerald-600">✓ Inklusive</td><td class="p-4 text-emerald-600">✓ Inklusive</td></tr>
-                        <tr><td class="p-4 pl-6">KW-Anzeige &amp; Monatsnavigation</td><td class="p-4 text-emerald-600">✓ Inklusive</td><td class="p-4 text-emerald-600">✓ Inklusive</td></tr>
-                        <tr><td class="p-4 pl-6">Zukunftsplanung im Kalender</td><td class="p-4">3 Monate voraus</td><td class="p-4 text-emerald-600">✓ Unbegrenzt voraus</td></tr>
-                        <tr><td class="p-4 pl-6">👥 Gruppen-Kalender (Echtzeit-Sync, Farbkodierung)</td><td class="p-4 text-slate-400">— Nicht enthalten</td><td class="p-4 text-emerald-600">✓ Premium Feature</td></tr>
+                        <!-- Schichtplaner -->
+                        <tr class="bg-slate-50/50 font-bold text-slate-950"><td class="p-3 pl-6" colspan="3">📅 Reiter 2: Der Schichtplaner</td></tr>
+                        <tr><td class="p-4 pl-6">Kalender &amp; Schichteintragung</td><td class="p-4 text-emerald-600">✓ Vollständig frei (Unbegrenztes Eintragen von Früh-, Spät-, Nachtschichten)</td><td class="p-4 text-emerald-600">✓ Inklusive</td></tr>
 
-                        <tr class="bg-slate-50/50 font-bold text-slate-950"><td class="p-3 pl-6" colspan="3">🍽️ Ernährung</td></tr>
-                        <tr><td class="p-4 pl-6">Mahlzeiten-Slots, manuelles Tracking &amp; Barcode-Scanner</td><td class="p-4 text-emerald-600">✓ Inklusive</td><td class="p-4 text-emerald-600">✓ Inklusive</td></tr>
-                        <tr><td class="p-4 pl-6">Wasser-Tracking (8 Gläser) &amp; Favoriten / Shake-Konfigurator</td><td class="p-4 text-emerald-600">✓ Inklusive</td><td class="p-4 text-emerald-600">✓ Inklusive</td></tr>
-                        <tr><td class="p-4 pl-6">⌨️ KI Text-Analyse</td><td class="p-4">5× pro Tag</td><td class="p-4 text-emerald-600">✓ Unbegrenzt</td></tr>
-                        <tr><td class="p-4 pl-6">📷 KI Foto-Analyse</td><td class="p-4">3× pro Tag</td><td class="p-4 text-emerald-600">✓ Unbegrenzt</td></tr>
-                        <tr><td class="p-4 pl-6">🔥 Ernährungsformen (Protein-Fasten etc.)</td><td class="p-4">1 Ernährungsform</td><td class="p-4 text-emerald-600">Alle 5 Ernährungsformen</td></tr>
-                        <tr><td class="p-4 pl-6">📆 Wochenplan-Scheduler (automatische Diät-Wechsel)</td><td class="p-4 text-slate-400">— Nicht enthalten</td><td class="p-4 text-emerald-600">✓ Premium Feature</td></tr>
-                        <tr><td class="p-4 pl-6">💡 KI Ernährungs-Empfehlung</td><td class="p-4">1× täglich</td><td class="p-4 text-emerald-600">✓ Live bei jeder neuen Mahlzeit</td></tr>
-                        <tr><td class="p-4 pl-6">🌙 KI Tagesanalyse (Abend-Auswertung)</td><td class="p-4 text-slate-400">— Nicht enthalten</td><td class="p-4 text-emerald-600">✓ Premium Feature</td></tr>
-                        <tr><td class="p-4 pl-6">📊 Verlauf &amp; Charts (Historie)</td><td class="p-4">7 Tage</td><td class="p-4 text-emerald-600">✓ Unbegrenzt</td></tr>
+                        <!-- Ernährung -->
+                        <tr class="bg-slate-50/50 font-bold text-slate-950"><td class="p-3 pl-6" colspan="3">🍽️ Reiter 3: Die Ernährung</td></tr>
+                        <tr><td class="p-4 pl-6">KI-Freitextfeld (Tracking)</td><td class="p-4 text-amber-600">Maximal 3 Abfragen pro Tag (Blockiert ab der 4.)</td><td class="p-4 text-emerald-600">✓ Unbegrenzte KI-Freitexteingaben</td></tr>
+                        <tr><td class="p-4 pl-6">Instagram-Rezept-Import</td><td class="p-4 text-amber-600">Exakt 1 automatisierter Import per Link pro Tag</td><td class="p-4 text-emerald-600">✓ Unbegrenzter Import</td></tr>
+                        <tr><td class="p-4 pl-6">Manuelle Rezepteingabe Maske</td><td class="p-4 text-emerald-600">✓ Dauerhaft und unbegrenzt kostenlos</td><td class="p-4 text-emerald-600">✓ Inklusive</td></tr>
+                        <tr><td class="p-4 pl-6">Rezept-Filter &amp; Fokus</td><td class="p-4 text-slate-500">Zeitfilter frei; "High Protein"-Fokus zeigt nur erste 3 Rezepte (Rest weichgezeichnet)</td><td class="p-4 text-emerald-600">✓ Unlimitierter Zugriff auf alle High-Protein-Rezepte</td></tr>
 
-                        <tr class="bg-slate-50/50 font-bold text-slate-950"><td class="p-3 pl-6" colspan="3">👨‍🍳 Rezepte</td></tr>
-                        <tr><td class="p-4 pl-6">Manuelle Rezept-Eingabe &amp; 1-Tap Direktracking</td><td class="p-4 text-emerald-600">✓ Unbegrenzt</td><td class="p-4 text-emerald-600">✓ Unbegrenzt</td></tr>
-                        <tr><td class="p-4 pl-6">🔗 KI Link-zu-Rezept Extraktion</td><td class="p-4">5 Rezepte gesamt</td><td class="p-4 text-emerald-600">✓ Unbegrenzt</td></tr>
-                        <tr><td class="p-4 pl-6">👨‍🍳 Kochmodus &amp; Share-Card (Instagram)</td><td class="p-4 text-slate-400">— Nicht enthalten</td><td class="p-4 text-emerald-600">✓ Premium Feature</td></tr>
-                        <tr><td class="p-4 pl-6">✨ KI Bild-Generierung (Fallback-Thumbnails)</td><td class="p-4 text-slate-400">— Nicht enthalten</td><td class="p-4 text-emerald-600">✓ Premium Feature</td></tr>
+                        <!-- Routinen -->
+                        <tr class="bg-slate-50/50 font-bold text-slate-950"><td class="p-3 pl-6" colspan="3">💊 Reiter 4: Die Routinen</td></tr>
+                        <tr><td class="p-4 pl-6">Verhütungs-Tracking (Obere Sektion)</td><td class="p-4 text-emerald-600">1-Klick-Abhaken frei; Autom. 21/7-Zyklussteuerung &amp; Vorrat nur ohne parallele Smart-Supplements (Limit: 1 Smart-Produkt aktiv)</td><td class="p-4 text-emerald-600">✓ Volle Zyklus-Automatisierung &amp; Vorratswarnung unlimitiert</td></tr>
+                        <tr><td class="p-4 pl-6">Supplements &amp; Schicht-Erinnerungen</td><td class="p-4 text-emerald-600">Manuell anlegen/abhaken nach starren Uhrzeiten frei; Max. 1 Supplement mit intelligentem Schicht-Trigger</td><td class="p-4 text-emerald-600">✓ Unbegrenzte smarte Feierabend-/Aufsteh-Trigger &amp; Vorratstracking</td></tr>
+                        <tr><td class="p-4 pl-6">Self-Workout-Planer (Untere Sektion)</td><td class="p-4 text-amber-600">Max. 3 Workouts pro Woche (Auswahl, Timer &amp; Log sperren sich ab dem 4. Workout)</td><td class="p-4 text-emerald-600">✓ Unbegrenzte Workouts und freies Loggen</td></tr>
 
-                        <tr class="bg-slate-50/50 font-bold text-slate-950"><td class="p-3 pl-6" colspan="3">🏋️ Training</td></tr>
-                        <tr><td class="p-4 pl-6">Live Workout-Execution, Gewichtstracking &amp; PR-Animationen</td><td class="p-4 text-emerald-600">✓ Inklusive</td><td class="p-4 text-emerald-600">✓ Inklusive</td></tr>
-                        <tr><td class="p-4 pl-6">🏋️ KI Trainingspläne</td><td class="p-4">1 aktiver Plan</td><td class="p-4 text-emerald-600">✓ Unbegrenzt + wöchentliche Regenerierung</td></tr>
-                        <tr><td class="p-4 pl-6">📈 Fortschritts-Charts &amp; History</td><td class="p-4">30 Tage</td><td class="p-4 text-emerald-600">✓ Unbegrenzt + Volumen-Charts</td></tr>
-                        <tr><td class="p-4 pl-6">🔄 Schicht-adaptive Plananpassung (Regeneration bei Nachtschicht)</td><td class="p-4 text-slate-400">— Nicht enthalten</td><td class="p-4 text-emerald-600">✓ Premium Feature</td></tr>
-                        <tr><td class="p-4 pl-6">🤖 KI Session-Review nach jedem Training</td><td class="p-4 text-slate-400">— Nicht enthalten</td><td class="p-4 text-emerald-600">✓ Premium Feature</td></tr>
-
-                        <tr class="bg-slate-50/50 font-bold text-slate-950"><td class="p-3 pl-6" colspan="3">💊 Supplements</td></tr>
-                        <tr><td class="p-4 pl-6">Supplement-Datenbank (35+ Produkte) &amp; Vorrats-Tracking</td><td class="p-4 text-emerald-600">✓ Inklusive</td><td class="p-4 text-emerald-600">✓ Inklusive</td></tr>
-                        <tr><td class="p-4 pl-6">💊 Gleichzeitiges Tracking limitieren</td><td class="p-4">Bis 5 Supplements</td><td class="p-4 text-emerald-600">✓ Unbegrenzt</td></tr>
-                        <tr><td class="p-4 pl-6">🔔 Push-Erinnerungen</td><td class="p-4">Nur feste Uhrzeit</td><td class="p-4 text-emerald-600">✓ Relativ zur Schicht angepasst</td></tr>
-                        <tr><td class="p-4 pl-6">📊 Wochen-Konsistenz &amp; Streaks (% eingenommen)</td><td class="p-4 text-slate-400">— Nicht enthalten</td><td class="p-4 text-emerald-600">✓ Premium Feature</td></tr>
+                        <!-- Globales Widget -->
+                        <tr class="bg-slate-50/50 font-bold text-slate-950"><td class="p-3 pl-6" colspan="3">⚙️ Globales Einstellungs-Widget (Header-Overlay)</td></tr>
+                        <tr><td class="p-4 pl-6">Stammdaten, Kalorienziele, Arbeitszeiten &amp; Rechtliches</td><td class="p-4 text-emerald-600">✓ Vollständig frei (Dauerhaft editierbar, inkl. 5 Links zu getshifti.de)</td><td class="p-4 text-emerald-600">✓ Inklusive</td></tr>
+                        <tr><td class="p-4 pl-6">Echtzeit-Synchronisation</td><td class="p-4 text-emerald-600">✓ Vollständig frei (Alle Änderungen spiegeln sich sofort ohne App-Neustart)</td><td class="p-4 text-emerald-600">✓ Inklusive</td></tr>
                     </tbody>
                 </table>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="max-w-6xl mx-auto w-full px-6 py-8 border-t border-brand-border flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-400 bg-brand-light">
         <div class="flex items-center gap-2">
             <img src="Logo%20Shifti.png" alt="Shifti Logo Mini" class="w-4 h-4 rounded-md object-cover">
